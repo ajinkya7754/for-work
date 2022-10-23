@@ -27,7 +27,6 @@ public class Util1 {
 		//scrolling
 		
 		public static void waitTillElementPresent(WebDriver driver, By element) {
-			
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 		}
